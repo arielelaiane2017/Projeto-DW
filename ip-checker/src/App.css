@@ -1,0 +1,106 @@
+/* App.css */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #f5f7f9, #c3cfe2);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 500px; /* Aumenta o tamanho máximo da área */
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: #333;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap; /* Evita a quebra de linha */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Adiciona reticências se o texto for muito longo */
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: center; /* Centraliza o texto dos labels */
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+input {
+  width: calc(100% - 24px);
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.button-container {
+  margin-top: 20px; /* Espaço acima do botão */
+}
+
+button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  background-color: #004085;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+p.open {
+  color: #28a745; /* Verde para porta aberta */
+}
+
+p.closed {
+  color: #dc3545; /* Vermelho para porta fechada */
+}
